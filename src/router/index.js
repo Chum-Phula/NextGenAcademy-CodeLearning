@@ -6,6 +6,8 @@ import CourseDetail from '../views/CourseDetail.vue'
 import Instructors from '../views/Instructors.vue'
 import Faq from '../views/Faq.vue'
 import Contact from '../views/Contact.vue'
+import SignUp from '../views/SignUp.vue'
+import Profile from '../views/Profile.vue'
 
 const routes = [
   { path: '/', redirect: '/login' },
@@ -28,13 +30,13 @@ const routes = [
   {
     path: '/profile',
     name: 'profile',
-    component: () => import('../views/Profile.vue'),
+    component: Profile,
     meta: { requiresAuth: true }
   },
   {
     path: '/signup',
     name: 'Signup',
-    component: () => import('../views/Signup.vue'),
+    component: SignUp,
     meta: { hideShell: true }
   }
   // new routes can be added here
