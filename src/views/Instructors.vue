@@ -1,5 +1,5 @@
 <template>
-
+  <div class="page-transition-wrapper">
   <!-- Sub Header -->
   <header class="py-5 bg-white">
     <div class="container text-center pt-3">
@@ -109,7 +109,7 @@
       </div>
     </div>
   </main>
-
+  </div>
 </template>
 
 <script setup>
