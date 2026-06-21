@@ -1,6 +1,10 @@
 <template>
   <nav-bar v-if="showShell" />
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition name="page" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
   <site-footer v-if="showShell" />
 </template>
 

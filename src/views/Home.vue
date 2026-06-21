@@ -1,48 +1,40 @@
 <template>
-
-
   <main>
     <!-- Hero -->
-    <section class="py-5 bg-white">
-      <div class="container py-4">
+    <section class="pt-5 pb-5 bg-white">
+      <div class="container py-lg-5">
         <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-3 text-dark">
+          <div class="col-lg-6 pe-lg-5">
+            <h1 class="display-4 fw-bolder mb-3 text-dark" style="letter-spacing: -1px;">
               សិក្សាកូដជាភាសាខ្មែរជាមួយ
               <span style="color: var(--primary-600)">NextGenAcademy</span>
             </h1>
-            <p class="lead text-secondary-custom mb-4">
+            <p class="fs-5 text-secondary mb-4" style="line-height: 1.7;">
               បច្ចេកវិទ្យាដែលមានតម្រូវការច្រើនបំផុតជាមួយអ្នកជំនាញ។ កម្មវិធីសិក្សាដែលមានរចនាសម្ព័ន្ធ និងគម្រោងដោយដៃរបស់យើងរៀបចំអ្នកសម្រាប់អាជីពដែលមានប្រាក់ខែខ្ពស់ក្នុងវិស័យបច្ចេកវិទ្យា។
             </p>
-            <div class="d-flex gap-3">
-              <router-link to="/courses" class="btn btn-brand-solid px-4 py-2">
+            <div class="d-flex gap-3 mt-2">
+              <router-link to="/courses" class="btn btn-brand-solid rounded-pill px-4 py-2.5 shadow-sm fw-medium">
               រកមើលវគ្គសិក្សា
               </router-link>
-              <button class="btn btn-brand-outline px-4 py-2">ស្វែងយល់បន្ថែម</button>
+              <button class="btn btn-light border rounded-pill px-4 py-2.5 shadow-sm fw-medium text-dark">ស្វែងយល់បន្ថែម</button>
             </div>
           </div>
           <div class="col-lg-6 position-relative">
-            <div class="rounded" style="height: 380px">
-              <!-- <dotlottie-wc
-                src="https://lottie.host/5a066af8-dde1-4a65-8342-f735f28f5056/PM5EIdx608.lottie"
-                style="width: 100%; height: 100%"
-                autoplay
-                loop
-              ></dotlottie-wc> -->
+            <div class="rounded-4 overflow-hidden" style="height: 400px">
               <iframe src="https://lottie.host/embed/199003e5-2314-4e25-8c72-3b8e84f5276c/Icak2JPreG.lottie" style="width: 100%; height: 100%" frameborder="0" allowfullscreen></iframe>
             </div>
             <div
-              class="position-absolute bottom-0 start-0 m-4 p-3 bg-white shadow rounded-3 d-flex align-items-center gap-3 border"
+              class="position-absolute bottom-0 start-0 m-4 p-3 bg-white shadow-lg rounded-4 d-flex align-items-center gap-3 border-0 float-anim"
             >
               <div
-                class="p-2 rounded-circle"
-                style="background: var(--primary-50); color: var(--primary-600)"
+                class="p-2 rounded-circle d-flex align-items-center justify-content-center"
+                style="background: #f8fafc; color: var(--primary-600); width: 45px; height: 45px;"
               >
-                <i class="fa-solid fa-bolt fs-4"></i>
+                <i class="fa-solid fa-bolt fs-5"></i>
               </div>
-              <div>
-                <h6 class="mb-0 fw-bold">វគ្គសរសេរកូដផ្ទាល់</h6>
-                <small class="text-secondary-custom">150+ សប្តាហ៍នេះ។</small>
+              <div class="pe-2">
+                <h6 class="mb-0 fw-bold text-dark">វគ្គសរសេរកូដផ្ទាល់</h6>
+                <small class="text-muted fw-medium">150+ សប្តាហ៍នេះ។</small>
               </div>
             </div>
           </div>
@@ -178,11 +170,9 @@
       </div>
     </section>
   </main>
-
 </template>
 
 <script setup>
-
 import { courses } from '../data/courses.js'
 
 const stats = [
@@ -219,3 +209,40 @@ const testimonials = [
   { name: 'Jordan Smith', role: 'Backend Student', quote: 'ខ្ញុំមានការពេញចិត្តយ៉ាងខ្លាំងចំពោះវគ្គសិក្សានេះ។ ការបង្រៀនមានភាពច្បាស់លាស់ ងាយយល់ និងមានលំហាត់អនុវត្តដែលជួយឱ្យខ្ញុំអភិវឌ្ឍជំនាញសរសេរកូដបានយ៉ាងមានប្រសិទ្ធភាព។ សូមអរគុណចំពោះវគ្គសិក្សាដ៏មានតម្លៃនេះ។' }
 ]
 </script>
+
+<style scoped>
+.float-anim {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.btn-brand-solid {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-brand-solid:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.2) !important;
+}
+
+.btn-light {
+  transition: all 0.2s ease;
+}
+.btn-light:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1 !important;
+  transform: translateY(-2px);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+</style>

@@ -436,6 +436,18 @@ footer a:hover {
   }
 }
 
+/* Page Transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
 /* ================= LOGIN PAGE ================= */
 .btn-sign {
   background-color: var(--button-bg) !important;
