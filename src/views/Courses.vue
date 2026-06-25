@@ -73,18 +73,6 @@
         </div>
       </div>
 
-      <!-- Pagination -->
-      <div class="d-flex justify-content-center align-items-center gap-2 mt-5">
-        <a href="#" class="page-circle text-muted" style="pointer-events: none; opacity: 0.5">
-          <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <a href="#" class="page-circle active">1</a>
-        <a href="#" class="page-circle">2</a>
-        <a href="#" class="page-circle">3</a>
-        <span class="px-1 text-muted">...</span>
-        <a href="#" class="page-circle">12</a>
-        <a href="#" class="page-circle"><i class="fa-solid fa-chevron-right"></i></a>
-      </div>
     </div>
   </main>
   </div>

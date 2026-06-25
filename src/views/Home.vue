@@ -19,7 +19,7 @@
               <button class="btn btn-light border rounded-pill px-4 py-2.5 shadow-sm fw-medium text-dark">ស្វែងយល់បន្ថែម</button>
             </div>
           </div>
-          <div class="col-lg-6 position-relative">
+          <div class="col-lg-6 position-relative ">
             <div class="rounded-4 overflow-hidden" style="height: 400px">
               <iframe src="https://lottie.host/embed/199003e5-2314-4e25-8c72-3b8e84f5276c/Icak2JPreG.lottie" style="width: 100%; height: 100%" frameborder="0" allowfullscreen></iframe>
             </div>
