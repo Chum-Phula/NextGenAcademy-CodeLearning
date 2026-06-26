@@ -94,7 +94,7 @@ function matches(course, filter) {
     case 'Backend':
       return badge.includes('backend') || badge.includes('code manage')
     case 'Database':
-      return badge.includes('database') || badge.includes('db') || badge.includes('frontend')
+      return badge.includes('database') || badge.includes('db')
     case 'Mobile':
       return badge.includes('mobile')
     default:

@@ -87,7 +87,7 @@ export const courses = [
     detailTitle: 'Advanced Bootstrap 5 Techniques',
     image: bootstrapImg,
     badge: 'Web Frontend',
-    badgeClass: 'badge-db',
+    badgeClass: 'badge-web',
     rating: 4.9,
     instructor: 'Elena Rodriguez',
     description:
