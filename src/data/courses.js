@@ -15,6 +15,7 @@ import swiftImg from '../assets/image/home/Swift.jpeg'
 import nodeImg from '../assets/image/home/Node JS.jpeg'
 import postgresImg from '../assets/image/courses/postgresql.jpg'
 import mysqlImg from '../assets/image/courses/mySQL.jpeg'
+// hai
 
 export const courses = [
   {
