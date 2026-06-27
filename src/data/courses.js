@@ -14,6 +14,7 @@ import reactImg from '../assets/image/home/react js.jpeg'
 import swiftImg from '../assets/image/home/Swift.jpeg'
 import nodeImg from '../assets/image/home/Node JS.jpeg'
 import postgresImg from '../assets/image/courses/postgresql.jpg'
+import mysqlImg from '../assets/image/courses/mySQL.jpeg'
 
 export const courses = [
   {
@@ -319,6 +320,48 @@ export const courses = [
       url: 'https://www.youtube.com/embed/VXQmlUQJ1h4',
       title: 'Advanced PostgreSQL Tutorial',
       duration: '95 min'
+    }
+  ]
+},
+{
+  slug: 'mysql',
+  title: 'MySQL Database: SQL & Relational Design',
+  detailTitle: 'MySQL Database: Complete Guide',
+  image: mysqlImg,
+  badge: 'Database',
+  badgeClass: 'badge-database',
+  rating: 4.8,
+  instructor: 'David Miller',
+  description:
+    'រៀន MySQL ចាប់ពី SQL មូលដ្ឋាន រហូតដល់ការរចនាតារាង, Relationships, Joins, Indexes, Stored Procedures និងការគ្រប់គ្រង Database សម្រាប់ Web Application ។',
+  hours: '26 Hours',
+  level: 'កម្រិតដំបូង',
+  moduleTitle: 'Introduction to MySQL',
+  episodes: [
+    {
+      url: 'https://www.youtube.com/embed/HXV3zeQKqGY',
+      title: 'SQL Tutorial - Full Database Course for Beginners',
+      duration: '257 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/7S_tz1z_5bA',
+      title: 'MySQL Crash Course',
+      duration: '57 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/yPu6qV5byu4',
+      title: 'MySQL Tutorial for Beginners',
+      duration: '77 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/5OdVJbNCSso',
+      title: 'MySQL Database Design Tutorial',
+      duration: '46 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/2HVMiPPuPIM',
+      title: 'MySQL Joins, Keys, and Relationships',
+      duration: '35 min'
     }
   ]
 }

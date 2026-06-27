@@ -305,7 +305,8 @@
 .badge-web { background-color: var(--primary-50); color: var(--primary-600); }
 .badge-mobile { background-color: #ecfdf5; color: var(--accent-600); }
 .badge-backend { background-color: #fff9db; color: #d97706; }
-.badge-db { background-color: #f3f0ff; color: #7048e8; }
+.badge-db,
+.badge-database { background-color: #f3f0ff; color: #7048e8; }
 
 /* ================= BREADCRUMBS ================= */
 .breadcrumb-item + .breadcrumb-item::before {
