@@ -13,6 +13,7 @@ import jsImg from '../assets/image/courses/Javascript.jpeg'
 import reactImg from '../assets/image/home/react js.jpeg'
 import swiftImg from '../assets/image/home/Swift.jpeg'
 import nodeImg from '../assets/image/home/Node JS.jpeg'
+import postgresImg from '../assets/image/courses/postgresql.jpg'
 
 export const courses = [
   {
@@ -278,7 +279,49 @@ export const courses = [
       { url: 'https://www.youtube.com/embed/P-fDVxjSXEw', title: 'What is Node.js? JavaScript Back-End Tutorial', duration: '8 min' },
       { url: 'https://www.youtube.com/embed/FPJzYFgexJA', title: 'Node JS Tutorial for Beginners 2026', duration: '136 min' }
     ]
-  }
+  },
+  {
+  slug: 'postgresql',
+  title: 'PostgreSQL Database: From Beginner to Advanced',
+  detailTitle: 'PostgreSQL Database: Complete Guide',
+  image: postgresImg,
+  badge: 'Database',
+  badgeClass: 'badge-database',
+  rating: 4.9,
+  instructor: 'David Miller',
+  description:
+    'រៀនពីរបៀបប្រើ PostgreSQL ចាប់ពីមូលដ្ឋានគ្រឹះ រហូតដល់ការរចនា Database, SQL Queries, Relationships, Indexes និង Performance Optimization សម្រាប់ការអភិវឌ្ឍន៍ Web Application ។',
+  hours: '30 Hours',
+  level: 'មធ្យម',
+  moduleTitle: 'Introduction to PostgreSQL',
+  episodes: [
+    {
+      url: 'https://www.youtube.com/embed/qw--VYLpxG4',
+      title: 'PostgreSQL Tutorial for Beginners',
+      duration: '90 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/SpfIwlAYaKk',
+      title: 'Learn PostgreSQL in One Video',
+      duration: '120 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/xaWlS9HtWYw',
+      title: 'PostgreSQL Crash Course',
+      duration: '60 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/WFT5MaZN6gQ',
+      title: 'PostgreSQL Full Course for Beginners',
+      duration: '180 min'
+    },
+    {
+      url: 'https://www.youtube.com/embed/VXQmlUQJ1h4',
+      title: 'Advanced PostgreSQL Tutorial',
+      duration: '95 min'
+    }
+  ]
+}
 ]
 
 export function getCourseBySlug(slug) {
